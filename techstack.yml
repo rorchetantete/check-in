@@ -1,11 +1,11 @@
-repo_name: XDoubleU/check-in
-report_id: a85242222b3391ff92c2f278542fa14a
+repo_name: rorchetantete/check-in
+report_id: f1d72e3ff75025fb8cd0364827c5db7f
 repo_type: Public
-timestamp: '2023-11-09T17:01:29+00:00'
-requested_by: renovate[bot]
+timestamp: '2023-12-06T07:56:27+00:00'
+requested_by: chetantete
 provider: github
 branch: main
-detected_tools_count: 44
+detected_tools_count: 61
 tools:
 - name: CSS 3
   description: The latest evolution of the Cascading Style Sheets language
@@ -46,8 +46,6 @@ tools:
   sub_category: Languages
   image_url: https://img.stackshare.io/service/2271/default_068d33483bba6b81ee13fbd4dc7aab9780896a54.png
   detection_source: api/migrations/00001_init.sql
-  last_updated_by: Xander Warszawski
-  last_updated_on: 2023-07-31 19:51:20.000000000 Z
 - name: TypeScript
   description: A superset of JavaScript that compiles to clean JavaScript output
   website_url: http://www.typescriptlang.org
@@ -69,10 +67,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Front-End Frameworks
   image_url: https://img.stackshare.io/service/1101/C9QJ7V3X.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: renovate[bot]
-  last_updated_on: 2023-11-01 08:06:24.000000000 Z
 - name: Next.js
   description: 'A small framework for server-rendered universal JavaScript apps '
   website_url: https://nextjs.org/
@@ -82,10 +78,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/5936/nextjs.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: Xander Warszawski
-  last_updated_on: 2023-07-31 19:51:20.000000000 Z
 - name: Node.js
   description: A platform built on Chrome's JavaScript runtime for easily building
     fast, scalable network applications
@@ -95,9 +89,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
-  detection_source: web/package.json
-  last_updated_by: Xander Warszawski
-  last_updated_on: 2023-07-31 19:51:20.000000000 Z
+  detection_source: web/Dockerfile
 - name: React
   description: A JavaScript library for building user interfaces
   website_url: https://reactjs.org/
@@ -108,10 +100,38 @@ tools:
   category: Libraries
   sub_category: Javascript UI Libraries
   image_url: https://img.stackshare.io/service/1020/OYIaJ1KK.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: renovate[bot]
-  last_updated_on: 2023-11-01 17:26:52.000000000 Z
+- name: Recharts
+  description: Redefined chart library built with React and D3
+  website_url: http://recharts.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Charting Libraries
+  image_url: https://img.stackshare.io/service/5608/13690587.png
+  detection_source: web/package.json
+- name: Sass
+  description: Syntactically Awesome Style Sheets
+  website_url: http://sass-lang.com/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/1171/jCR2zNJV.png
+  detection_source: web/package.json
+- name: Heroku Postgres
+  description: Heroku's Database-as-a-Service. Based on the most powerful open-source
+    database, PostgreSQL
+  website_url: https://www.heroku.com/postgres
+  open_source: false
+  hosted_saas: true
+  category: Data Stores
+  sub_category: PostgreSQL as a Service
+  image_url: https://img.stackshare.io/service/2516/original.png
+  detection_source: api/docker-compose.yml
 - name: Codecov
   description: Hosted coverage reports with awesome features to enhance your CI workflow
   website_url: https://codecov.io/
@@ -121,8 +141,6 @@ tools:
   sub_category: Code Coverage
   image_url: https://img.stackshare.io/service/2673/Codecov_Mark_Circle_Pink.png
   detection_source: codecov.yml
-  last_updated_by: Xander Warszawski
-  last_updated_on: 2023-04-22 08:29:25.000000000 Z
 - name: Docker
   description: Enterprise Container Platform for High-Velocity Innovation.
   website_url: https://www.docker.com/
@@ -143,8 +161,6 @@ tools:
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
   detection_source: web/package.json
-  last_updated_by: Xander Warszawski
-  last_updated_on: 2023-08-23 17:12:48.000000000 Z
 - name: Git
   description: Fast, scalable, distributed revision control system
   website_url: http://git-scm.com/
@@ -162,9 +178,18 @@ tools:
   category: Build, Test, Deploy
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/11563/actions.png
-  detection_source: ".github/workflows/web.yml"
-  last_updated_by: Xander Warszawski
-  last_updated_on: 2023-10-13 18:34:32.000000000 Z
+  detection_source: ".github/workflows/api-test.yml"
+- name: Istio
+  description: Open platform to connect, manage, and secure microservices, by Google,
+    IBM, and Lyft
+  website_url: https://istio.io/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Microservices Tools
+  image_url: https://img.stackshare.io/service/7028/AGpa5VZV.jpg
+  detection_source: api/.golangci.yml
 - name: Jest
   description: Painless JavaScript Unit Testing
   website_url: http://facebook.github.io/jest/
@@ -175,10 +200,8 @@ tools:
   category: Build, Test, Deploy
   sub_category: Javascript Testing Framework
   image_url: https://img.stackshare.io/service/830/jest.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: Xander Warszawski
-  last_updated_on: 2023-07-31 19:51:20.000000000 Z
 - name: Prettier
   description: 'Prettier is an opinionated code formatter. '
   website_url: https://prettier.io/
@@ -189,10 +212,8 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: renovate[bot]
-  last_updated_on: 2023-09-01 05:00:41.000000000 Z
 - name: Testify
   description: A toolkit with common assertions and mocks that plays nicely with the
     standard library
@@ -204,8 +225,6 @@ tools:
   sub_category: Go Testing
   image_url: https://img.stackshare.io/service/8695/stretchr.png
   detection_source: api/go.mod
-  last_updated_by: Xander Warszawski
-  last_updated_on: 2023-07-31 19:51:20.000000000 Z
 - name: Yarn
   description: A new package manager for JavaScript
   website_url: https://yarnpkg.com/
@@ -214,9 +233,18 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/5848/44mC-kJ3.jpg
-  detection_source: yarn.lock
-  last_updated_by: Xander Warszawski
-  last_updated_on: 2023-04-01 18:15:57.000000000 Z
+  detection_source: web/yarn.lock
+- name: ZyXel
+  description: Your Networking Ally
+  website_url: https://www.zyxel.com/us/en/
+  version: 0.3.2
+  open_source: false
+  hosted_saas: false
+  category: Monitoring
+  sub_category: Networking Hardware
+  image_url: https://img.stackshare.io/service/21126/default_82855a9a63ac94e02248a391b260a94acbafb41a.png
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/api/go.sum
+  detection_source: api/go.mod
 - name: npm
   description: The package manager for JavaScript.
   website_url: https://www.npmjs.com/
@@ -226,8 +254,61 @@ tools:
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
   detection_source: web/package.json
-  last_updated_by: Xander Warszawski
-  last_updated_on: 2023-07-31 19:51:20.000000000 Z
+- name: Moneyboard.io
+  description: The ultimate e-commerce dashboard to track and analyse the most important
+    metrics of your e-commerce business
+  website_url: https://www.moneyboard.io/
+  version: 0.2.0
+  open_source: false
+  hosted_saas: false
+  category: Analytics
+  sub_category: Business Dashboards
+  image_url: https://img.stackshare.io/service/21150/default_b3ae71948cec339e8f03cdde4da6f8c94a048315.jpg
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/api/go.sum
+  detection_source: api/go.mod
+- name: Appzi
+  description: A web based user feedback platform that enables SaaS companies to collect
+    product feedback, right from within their website or app
+  website_url: https://www.appzi.com/
+  version: 0.17.0
+  open_source: false
+  hosted_saas: false
+  category: Support, Sales, and Marketing
+  sub_category: Feedback Widget
+  image_url: https://img.stackshare.io/service/21120/default_ff503018433e4c15bd8f88f38f956808d71ae76e.jpg
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/api/go.sum
+  detection_source: api/go.mod
+- name: Dutypare
+  description: Comparing duty free products from worldwide shops.
+  website_url: https://dutypare.com
+  version: 0.0.0
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/21119/default_7d7cdfe126e00b141809117af1af8ba177913dc4.png
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/api/go.sum
+  detection_source: api/go.mod
+- name: GlockApps
+  description: Pinpoint email issues before you hit "send"
+  website_url: https://glockapps.com/
+  version: 1.10.1
+  open_source: false
+  hosted_saas: false
+  category: Communications
+  sub_category: Email Deliverability
+  image_url: https://img.stackshare.io/service/21322/default_59cc834bca9eb9627bcbfc3cf20305fd47a8453f.jpg
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/api/go.sum
+  detection_source: api/go.mod
+- name: MapAuthority
+  description: Enforce your Amazon MAP pricing
+  website_url: https://www.mapauthority.com/
+  version: 1.3.0
+  open_source: false
+  hosted_saas: false
+  category: Application Utilities
+  sub_category: Ecommerce
+  image_url: https://img.stackshare.io/service/21200/default_6bb5c2e9b79f84d9fecc5174f64649e23278eb1d.jpg
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/api/go.sum
+  detection_source: api/go.mod
 - name: Moment.js
   description: A JavaScript date library for parsing, validating, manipulating, and
     formatting dates
@@ -239,10 +320,42 @@ tools:
   category: Libraries
   sub_category: Javascript Utilities & Libraries
   image_url: https://img.stackshare.io/service/3643/Xrtdc94q_400x400.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: Xander Warszawski
-  last_updated_on: 2023-10-01 20:04:43.000000000 Z
+- name: PyCodeQual
+  website_url: https://pycodequ.al/i
+  version: 1.3.1
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/21246/default_ea396f63a8974b2c19460a4ea524ea4c3a3a110f.png
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/api/go.sum
+  detection_source: api/go.mod
+- name: Quickwork Journey Builder
+  website_url: https://automation.quickwork.co/#/
+  version: 0.14.0
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/21121/default_682895d4f0a2777cec582ef7c7f20fd167c1ce11.png
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/api/go.sum
+  detection_source: api/go.mod
+- name: WSL
+  description: Run a GNU/Linux environment directly on Windows
+  website_url: https://docs.microsoft.com/en-us/windows/wsl/about
+  version: 1.10.3
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Operating Systems
+  image_url: https://img.stackshare.io/service/21407/default_50834d775ade6b5f1b26a16b626ef3058b6ccf58.png
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/api/go.sum
+  detection_source: api/go.mod
+- name: 'go '
+  description: Go will make you love programming again. I promise.
+  website_url: https://golang.org/
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/3458/v02jhlxou71qagr6mwet_normal.png
+  detection_source: api/cmd/api/auth.go
 - name: "@mdx-js/react"
   description: React implementation for MDX
   package_url: https://www.npmjs.com/@mdx-js/react
@@ -253,10 +366,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17624/default_61a119a7701a0e8224ca0e4dce7ff951cd67972f.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: renovate[bot]
-  last_updated_on: 2023-11-01 17:26:52.000000000 Z
 - name: "@testing-library/jest-dom"
   description: Custom jest matchers to test the state of the DOM
   package_url: https://www.npmjs.com/@testing-library/jest-dom
@@ -267,10 +378,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17424/default_1cdcda15ebb7caed879f8340bc212b44c4ec9dac.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: renovate[bot]
-  last_updated_on: 2023-11-01 17:22:43.000000000 Z
 - name: "@testing-library/react"
   description: Simple and complete React DOM testing utilities that encourage good
     testing practices
@@ -282,10 +391,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16549/default_d522554c6a41cb28d922d6d3ad32ad4afa0e3bb5.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: renovate[bot]
-  last_updated_on: 2023-11-01 17:26:52.000000000 Z
 - name: "@types/jest"
   description: TypeScript definitions for Jest
   package_url: https://www.npmjs.com/@types/jest
@@ -296,10 +403,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15840/default_004658cda9b38934f2871435e9dc15608c86e8be.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: renovate[bot]
-  last_updated_on: 2023-11-01 17:22:43.000000000 Z
 - name: "@types/node"
   description: TypeScript definitions for Node.js
   package_url: https://www.npmjs.com/@types/node
@@ -310,10 +415,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15809/default_5e5e8ac63beda29f31f1844df64d4b8247570a66.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: renovate[bot]
-  last_updated_on: 2023-11-01 17:22:43.000000000 Z
 - name: "@types/react"
   description: TypeScript definitions for React
   package_url: https://www.npmjs.com/@types/react
@@ -324,10 +427,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15894/default_1d65e37e65b7f80761374f0202776043277d505d.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: renovate[bot]
-  last_updated_on: 2023-11-01 17:26:52.000000000 Z
 - name: "@types/uuid"
   description: TypeScript definitions for uuid
   package_url: https://www.npmjs.com/@types/uuid
@@ -338,10 +439,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16257/default_ab17554b7e80af3d234b14168ed61e75d43f8eee.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: renovate[bot]
-  last_updated_on: 2023-11-01 17:22:43.000000000 Z
 - name: "@typescript-eslint/eslint-plugin"
   description: TypeScript plugin for ESLint
   package_url: https://www.npmjs.com/@typescript-eslint/eslint-plugin
@@ -352,10 +451,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15982/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: renovate[bot]
-  last_updated_on: 2023-11-01 17:22:43.000000000 Z
 - name: "@typescript-eslint/parser"
   description: An ESLint custom parser which leverages TypeScript ESTree
   package_url: https://www.npmjs.com/@typescript-eslint/parser
@@ -366,10 +463,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15980/default_732016a20524708efe7a4c77497fe9bfeea19ba6.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: renovate[bot]
-  last_updated_on: 2023-11-01 17:22:43.000000000 Z
 - name: cross-env
   description: Run scripts that set and use environment variables across platforms
   package_url: https://www.npmjs.com/cross-env
@@ -380,10 +475,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15828/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: Xander Warszawski
-  last_updated_on: 2023-10-01 20:04:43.000000000 Z
 - name: eslint-config-prettier
   description: Turns off all rules that are unnecessary or might conflict with Prettier
   package_url: https://www.npmjs.com/eslint-config-prettier
@@ -394,10 +487,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15879/default_0b10af8ca19c215f781dc07442e75bdc831089d0.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: renovate[bot]
-  last_updated_on: 2023-11-01 17:20:50.000000000 Z
 - name: eslint-import-resolver-typescript
   description: TypeScript .ts .tsx module resolver for `eslint-plugin-import`
   package_url: https://www.npmjs.com/eslint-import-resolver-typescript
@@ -408,10 +499,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/18380/default_d0ba753d47207ad8f04b02befcab81c50f38718f.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: renovate[bot]
-  last_updated_on: 2023-11-01 17:22:43.000000000 Z
 - name: eslint-plugin-import
   description: Import with sanity
   package_url: https://www.npmjs.com/eslint-plugin-import
@@ -422,10 +511,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15806/default_98aa227f51aa9d787815ec3fd98d0ab2bfebbb91.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: renovate[bot]
-  last_updated_on: 2023-11-01 17:20:50.000000000 Z
 - name: jest-environment-jsdom
   description: Delightful JavaScript Testing
   package_url: https://www.npmjs.com/jest-environment-jsdom
@@ -436,10 +523,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/18413/default_867ef7396016341fd213fa568d6de11cc98fefff.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: renovate[bot]
-  last_updated_on: 2023-11-01 17:22:43.000000000 Z
 - name: moment
   description: Parse, validate, manipulate, and display dates
   package_url: https://www.npmjs.com/moment
@@ -450,10 +535,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15847/default_4479dbac220be99e50e724b2df6cf415241d71fd.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: Xander Warszawski
-  last_updated_on: 2023-10-01 20:04:43.000000000 Z
 - name: moment-timezone
   description: Parse and display moments in any timezone
   package_url: https://www.npmjs.com/moment-timezone
@@ -464,10 +547,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16298/default_8b65a873fd3277d73483d6846fa38192391abf23.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: Xander Warszawski
-  last_updated_on: 2023-10-01 20:04:43.000000000 Z
 - name: prop-types
   description: Runtime type checking for React props and similar objects
   package_url: https://www.npmjs.com/prop-types
@@ -478,10 +559,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15843/default_b71c906aeda030a5e2f1fe40bf12a93be52404ab.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: renovate[bot]
-  last_updated_on: 2023-11-01 17:22:43.000000000 Z
 - name: query-string
   description: Parse and stringify URL query strings
   package_url: https://www.npmjs.com/query-string
@@ -492,10 +571,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16244/default_380ae3d73e22c7ca1f42b96479bcd0095dabc0d3.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: Xander Warszawski
-  last_updated_on: 2023-07-31 19:51:20.000000000 Z
 - name: react-bootstrap
   description: Bootstrap 3 components built with React
   package_url: https://www.npmjs.com/react-bootstrap
@@ -506,10 +583,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16383/default_92302d1bbf4c0f67b862869662b4f69002c94aad.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: renovate[bot]
-  last_updated_on: 2023-11-01 17:26:52.000000000 Z
 - name: react-dom
   description: React package for working with the DOM
   package_url: https://www.npmjs.com/react-dom
@@ -520,38 +595,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15808/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: renovate[bot]
-  last_updated_on: 2023-11-01 17:26:52.000000000 Z
-- name: recharts
-  description: React charts
-  package_url: https://www.npmjs.com/recharts
-  version: 2.9.2
-  license: MIT
-  open_source: true
-  hosted_saas: false
-  category: Libraries
-  sub_category: npm Packages
-  image_url: https://img.stackshare.io/package/18162/default_77d2e8738857baa38b19bd635d4e8653809e03e4.png
-  detection_source_url: web/yarn.lock
-  detection_source: web/package.json
-  last_updated_by: renovate[bot]
-  last_updated_on: 2023-11-01 17:22:18.000000000 Z
-- name: sass
-  description: A pure JavaScript implementation of Sass
-  package_url: https://www.npmjs.com/sass
-  version: 1.69.5
-  license: MIT
-  open_source: true
-  hosted_saas: false
-  category: Libraries
-  sub_category: npm Packages
-  image_url: https://img.stackshare.io/package/16057/default_5fd43aeff4d6a935abc13737de01a0355210499d.png
-  detection_source_url: web/yarn.lock
-  detection_source: web/package.json
-  last_updated_by: renovate[bot]
-  last_updated_on: 2023-11-01 11:07:16.000000000 Z
 - name: ts-jest
   description: A preprocessor with source maps support to help use TypeScript with
     Jest
@@ -563,10 +608,8 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15864/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: renovate[bot]
-  last_updated_on: 2023-11-01 17:22:43.000000000 Z
 - name: uuid
   description: RFC4122
   package_url: https://www.npmjs.com/uuid
@@ -577,7 +620,65 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15916/default_e0a4fb1126d7400f419f0931cf1669947a5bc552.png
-  detection_source_url: web/yarn.lock
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/web/yarn.lock
   detection_source: web/package.json
-  last_updated_by: renovate[bot]
-  last_updated_on: 2023-11-01 08:06:48.000000000 Z
+- name: client-go/pkg/api
+  description: Go client for Kubernetes
+  package_url: https://pkg.go.dev/k8s.io/client-go/pkg/api
+  version: 1.1.1
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/api/go.sum
+  detection_source: api/go.mod
+- name: easyjson
+  description: Fast JSON serializer for golang
+  package_url: https://pkg.go.dev/github.com/mailru/easyjson
+  version: 0.7.7
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/api/go.sum
+  detection_source: api/go.mod
+- name: golang-kardianos-service
+  description: Run go programs as a service on major platforms
+  package_url: https://pkg.go.dev/github.com/ayufan/golang-kardianos-service
+  version: 1.2.0
+  license: Zlib
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/api/go.sum
+  detection_source: api/go.mod
+- name: govcloudair
+  description: VCloud Air API bindings for Golang
+  package_url: https://pkg.go.dev/github.com/vmware/govcloudair
+  version: 0.0.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/api/go.sum
+  detection_source: api/go.mod
+- name: libtrust
+  description: Primitives for identity and authorization
+  package_url: https://pkg.go.dev/github.com/docker/libtrust
+  version: 1.10.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: github.com/rorchetantete/check-in/blob/main/api/go.sum
+  detection_source: api/go.mod
